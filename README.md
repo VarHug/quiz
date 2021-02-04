@@ -16,14 +16,19 @@
   * 实现版本: [https://github.com/VarHug/quiz/blob/master/src/week-02/index.ts](https://github.com/VarHug/quiz/blob/master/src/week-02/index.ts)
 * sanitizeHex : 为16进制字符串添加 "0x" 前缀
   * 实现版本: [https://github.com/VarHug/quiz/blob/master/src/week-02/index.ts](https://github.com/VarHug/quiz/blob/master/src/week-02/index.ts)
+* padLeft : 左边补位
+  * 实现版本: [https://github.com/VarHug/quiz/blob/master/src/week-02/index.ts](https://github.com/VarHug/quiz/blob/master/src/week-02/index.ts)
 ## 题目归档
-
-### List（数组）
-* adjust
 
 ### Number（数字处理、金融相关）
 * removeHexPrefix
 * sanitizeHex
+
+### String（字符串）
+* padLeft
+
+### List（数组）
+* adjust
 
 ### 算法
 

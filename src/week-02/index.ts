@@ -27,3 +27,22 @@ export const sanitizeHex: (hex: string) => string = (hex: string): string => {
   _hex = _hex.length % 2 ? `0${_hex}` : _hex;
   return `0x${_hex}`;
 };
+
+/**
+ * @description 左边补位
+ * @sig String | Number -> Number -> String -> String
+ * @param {String|Number} n 待补位字符串或数字
+ * @param {String} width 长度
+ * @param {String} z 选传，补位字符，如果没传，用 0 占位
+ * @returns {String}
+ * @example
+ *      padLeft('111', 5, 'a');     //=> "aa111"
+ *      padLeft("123", 5);          //=> "00123"
+ *      padLeft(123, 5);            //=> "00123"
+ * @score 40
+ */
+export const padLeft = (n: string|number, width: number, z?: string): string => {
+  const _z: string = z || '0';
+  const _n: string = n + '';
+  return width < _n.length ? _n : new Array(width - _n.length + 1).join(_z) + _n;
+};
