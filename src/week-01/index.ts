@@ -13,15 +13,15 @@ interface IAdjustFunc {
  * @example
  *      adjust(1, R.toUpper, ['a', 'b', 'c', 'd']);      //=> ['a', 'B', 'c', 'd']
  *      adjust(-1, R.toUpper, ['a', 'b', 'c', 'd']);     //=> ['a', 'b', 'c', 'D']
- * @sig 50
+ * @score 50
  */
 export const adjust: IAdjustFunc = (idx: number, fn: Function, list: any[]): any[] => {
   if (idx < -list.length || idx >= list.length) {
     return list;
   }
-  const start = idx < 0 ? list.length : 0;
-  const _idx = start + idx;
-  const _list = list.slice();
+  const start: number = idx < 0 ? list.length : 0;
+  const _idx: number = start + idx;
+  const _list: any[] = list.slice();
   _list[_idx] = fn(_list[_idx]);
   return _list;
 };
