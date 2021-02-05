@@ -8,7 +8,9 @@
  *      removeHexPrefix("0xA6");          //=> "a6"
  * @score 20
  */
-export const removeHexPrefix: (hex: string) => string = (hex: string): string => {
+export const removeHexPrefix: (hex: string) => string = (
+  hex: string
+): string => {
   return hex.replace('0x', '').toLowerCase();
 };
 
@@ -41,8 +43,14 @@ export const sanitizeHex: (hex: string) => string = (hex: string): string => {
  *      padLeft(123, 5);            //=> "00123"
  * @score 40
  */
-export const padLeft = (n: string|number, width: number, z?: string): string => {
+export const padLeft = (
+  n: string | number,
+  width: number,
+  z?: string
+): string => {
   const _z: string = z || '0';
   const _n: string = n + '';
-  return width < _n.length ? _n : new Array(width - _n.length + 1).join(_z) + _n;
+  return width < _n.length
+    ? _n
+    : new Array(width - _n.length + 1).join(_z) + _n;
 };
