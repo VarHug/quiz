@@ -12,9 +12,7 @@
  *      less(3, 2);           //=> 1
  * @score 20
  */
-export const less = (a, b) => {
-
-};
+export const less = (a, b) => {};
 
 /**
  * @description 交换函数，交换数组中两个元素的位置。可以选择是否原地交换，默认是原地交换
@@ -30,9 +28,7 @@ export const less = (a, b) => {
  *      swap([1, 2, 3, 4], 0, 1, false);    //=> [2, 1, 3, 4]
  * @score 20
  */
-export const swap = (list, i, j, inplace) => {
-
-};
+export const swap = (list, i, j, inplace) => {};
 
 /**
  * @description 给定一个包含红色、白色和蓝色，一共 n 个元素的数组，原地对它们进行排序，使得相同颜色的元素相邻，并按照红色、白色、蓝色顺序排列。此题中，我们使用整数 0、 1 和 2 分别表示红色、白色和蓝色。
@@ -47,6 +43,4 @@ export const swap = (list, i, j, inplace) => {
  *      sortColors([1]);         //=> [1]
  * @score 60（不使用原生的 sort 方法 20 分，遍历两次数组 20 分，只遍历一次数组 20 分）
  */
-export const sortColors = (nums) => {
-
-};
+export const sortColors = (nums) => {};
