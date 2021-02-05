@@ -11,9 +11,9 @@ test('sanitizeHex', () => {
 });
 
 test('padLeft', () => {
-  expect(padLeft('111', 5, 'a')).toBe("aa111");
-  expect(padLeft("123", 5)).toBe("00123");
-  expect(padLeft(123, 5)).toBe("00123");
-  expect(padLeft(123, 3)).toBe("123");
-  expect(padLeft(123, 3, 'a')).toBe("123");
+  expect(padLeft('111', 5, 'a')).toBe('aa111');
+  expect(padLeft('123', 5)).toBe('00123');
+  expect(padLeft(123, 5)).toBe('00123');
+  expect(padLeft(123, 3)).toBe('123');
+  expect(padLeft(123, 3, 'a')).toBe('123');
 });
