@@ -1,6 +1,5 @@
-
 interface IAdjustFunc {
-  (idx: number, fn: Function, list: any[]): any[]
+  (idx: number, fn: Function, list: any[]): any[];
 }
 
 /**
@@ -15,7 +14,11 @@ interface IAdjustFunc {
  *      adjust(-1, R.toUpper, ['a', 'b', 'c', 'd']);     //=> ['a', 'b', 'c', 'D']
  * @score 50
  */
-export const adjust: IAdjustFunc = (idx: number, fn: Function, list: any[]): any[] => {
+export const adjust: IAdjustFunc = (
+  idx: number,
+  fn: Function,
+  list: any[]
+): any[] => {
   if (idx < -list.length || idx >= list.length) {
     return list;
   }
@@ -35,9 +38,11 @@ export const adjust: IAdjustFunc = (idx: number, fn: Function, list: any[]): any
  *      groupAnagrams(["eat", "tea", "tan", "ate", "nat", "bat"]);      //=> [["ate","eat","tea"],["nat","tan"],["bat"]]
  * @score 50
  */
-export const groupAnagrams: (strs: string[]) => string[][] = (strs: string[]): string[][] => {
+export const groupAnagrams: (strs: string[]) => string[][] = (
+  strs: string[]
+): string[][] => {
   const dic: {
-    [propName: string]: number
+    [propName: string]: number;
   } = {};
   const ret: string[][] = [];
   let counter: number = 0;
