@@ -12,11 +12,11 @@
  *      less(3, 2);           //=> 1
  * @score 20
  */
-export function less (a: number|string, b: number|string) {
+export function less(a: number | string, b: number | string) {
   const _a: string = a + '';
   const _b: string = b + '';
   return _a.localeCompare(_b);
-};
+}
 
 // /**
 //  * @description 交换函数，交换数组中两个元素的位置。可以选择是否原地交换，默认是原地交换
