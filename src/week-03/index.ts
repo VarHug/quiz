@@ -12,29 +12,32 @@
  *      less(3, 2);           //=> 1
  * @score 20
  */
-export function less(a: number | string, b: number | string) {
+export function less(a: number | string, b: number | string): number {
   const _a: string = a + '';
   const _b: string = b + '';
   return _a.localeCompare(_b);
 }
 
-// /**
-//  * @description 交换函数，交换数组中两个元素的位置。可以选择是否原地交换，默认是原地交换
-//  * @sig Array -> Number -> Number -> Boolean -> Array
-//  * @param {Array} list
-//  * @param {Number} i
-//  * @param {Number} j
-//  * @param {Boolean} inplace 是否原地（改变原数组）交换
-//  * @returns {void|Array}
-//  * @example
-//  *      const list = [1, 2, 3, 4];
-//  *      swap(list, 0, 1);                   //=> list:[2, 1, 3, 4]
-//  *      swap([1, 2, 3, 4], 0, 1, false);    //=> [2, 1, 3, 4]
-//  * @score 20
-//  */
-// export const swap = (list, i, j, inplace) => {
-
-// };
+/**
+ * @description 交换函数，原地交换数组中两个元素的位置。
+ * @sig Array -> Number -> Number -> Array
+ * @param {Array} list
+ * @param {Number} i
+ * @param {Number} j
+ * @returns {void|Array}
+ * @example
+ *      const list = [1, 2, 3, 4];
+ *      swap(list, 0, 1);                   //=> list:[2, 1, 3, 4]
+ *      swap([1, 2, 3, 4], 0, 1, false);    //=> [2, 1, 3, 4]
+ * @score 20
+ */
+export function swap(list: any[], i: number, j: number): void {
+  if (!(i < 0 || j < 0 || i >= list.length || j >= list.length)) {
+    const temp = list[i];
+    list[i] = list[j];
+    list[j] = temp;
+  }
+}
 
 // /**
 //  * @description 给定一个包含红色、白色和蓝色，一共 n 个元素的数组，原地对它们进行排序，使得相同颜色的元素相邻，并按照红色、白色、蓝色顺序排列。此题中，我们使用整数 0、 1 和 2 分别表示红色、白色和蓝色。
