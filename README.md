@@ -21,8 +21,13 @@
 
 ### week 3
 * less : 比较函数
+  * 实现版本: [https://github.com/VarHug/quiz/blob/master/src/week-03/index.ts#L15](https://github.com/VarHug/quiz/blob/master/src/week-03/index.ts#L15)
 * swap : 交换函数
+  * 实现版本: [https://github.com/VarHug/quiz/blob/master/src/week-03/index.ts#L34](https://github.com/VarHug/quiz/blob/master/src/week-03/index.ts#L34)
 * sortColors : 荷兰国旗问题
+  * 题目参考: [https://leetcode.com/problems/sort-colors/](https://leetcode.com/problems/sort-colors/)
+  * 实现版本: [https://github.com/VarHug/quiz/blob/master/src/week-03/index.ts#L55](https://github.com/VarHug/quiz/blob/master/src/week-03/index.ts#L55)
+  * 题解参考: [https://leetcode.com/problems/sort-colors/discuss/?currentPage=1&orderBy=hot&query=](https://leetcode.com/problems/sort-colors/discuss/?currentPage=1&orderBy=hot&query=)
 
 ## 题目归档
 
@@ -45,5 +50,5 @@
 #### 哈希表
 * groupAnagrams
 
-### 排序
+#### 排序
 * sortColors
