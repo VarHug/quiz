@@ -18,6 +18,12 @@
   * 实现版本: [https://github.com/VarHug/quiz/blob/master/src/week-02/index.ts#L25](https://github.com/VarHug/quiz/blob/master/src/week-02/index.ts#L25)
 * padLeft : 左边补位
   * 实现版本: [https://github.com/VarHug/quiz/blob/master/src/week-02/index.ts#L44](https://github.com/VarHug/quiz/blob/master/src/week-02/index.ts#L44)
+
+### week 3
+* less : 比较函数
+* swap : 交换函数
+* sortColors : 荷兰国旗问题
+
 ## 题目归档
 
 ### Number（数字处理、金融相关）
@@ -29,8 +35,15 @@
 
 ### List（数组）
 * adjust
+* swap
+
+### 其他
+* less
 
 ### 算法
 
 #### 哈希表
 * groupAnagrams
+
+### 排序
+* sortColors
