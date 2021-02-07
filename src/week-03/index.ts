@@ -39,19 +39,34 @@ export function swap(list: any[], i: number, j: number): void {
   }
 }
 
-// /**
-//  * @description 给定一个包含红色、白色和蓝色，一共 n 个元素的数组，原地对它们进行排序，使得相同颜色的元素相邻，并按照红色、白色、蓝色顺序排列。此题中，我们使用整数 0、 1 和 2 分别表示红色、白色和蓝色。
-//  * @sig Array -> Array
-//  * @param {Array} nums
-//  * @returns {void}
-//  * @example
-//  *      const colors = [2,0,2,1,1,0]; // 原地排序，之后一样，改变入参
-//  *      sortColors(colors);      //=> colors:[0,0,1,1,2,2]
-//  *      sortColors([2,0,1]);     //=> [0,1,2]
-//  *      sortColors([0]);         //=> [0]
-//  *      sortColors([1]);         //=> [1]
-//  * @score 60（不使用原生的 sort 方法 20 分，遍历两次数组 20 分，只遍历一次数组 20 分）
-//  */
-// export const sortColors = (nums) => {
-
-// };
+/**
+ * @description 给定一个包含红色、白色和蓝色，一共 n 个元素的数组，原地对它们进行排序，使得相同颜色的元素相邻，并按照红色、白色、蓝色顺序排列。此题中，我们使用整数 0、 1 和 2 分别表示红色、白色和蓝色。
+ * @sig Array -> Array
+ * @param {Array} nums
+ * @returns {void}
+ * @example
+ *      const colors = [2,0,2,1,1,0]; // 原地排序，之后一样，改变入参
+ *      sortColors(colors);      //=> colors:[0,0,1,1,2,2]
+ *      sortColors([2,0,1]);     //=> [0,1,2]
+ *      sortColors([0]);         //=> [0]
+ *      sortColors([1]);         //=> [1]
+ * @score 60（不使用原生的 sort 方法 20 分，遍历两次数组 20 分，只遍历一次数组 20 分）
+ */
+export function sortColors(nums: number[]): void {
+  const WHITE: number = 1;
+  let red: number = 0,
+    white: number = 0,
+    blue: number = nums.length - 1;
+  while (white <= blue) {
+    if (nums[white] < WHITE) {
+      swap(nums, red, white);
+      red++;
+      white++;
+    } else if (nums[white] > WHITE) {
+      swap(nums, white, blue);
+      blue--;
+    } else {
+      white++;
+    }
+  }
+}
